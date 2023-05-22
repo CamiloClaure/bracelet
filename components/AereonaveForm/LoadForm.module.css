@@ -1,0 +1,15 @@
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  flex-wrap: nowrap;
+}
+
+.formColumn {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  flex: 1;
+}

@@ -1,0 +1,36 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.backGroundMain {
+  background-image: url("../public/inex_backgroud.jpeg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.contactModalBody {
+  min-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.contactModalBodyColum {
+  flex: 0 1 auto;
+  margin: 10px;
+  min-width: 200px;
+}
