@@ -105,6 +105,9 @@ export default function AdminMenu() {
             </List>
           </AccordionDetails>
         </Accordion>
+        Maria Fernanda Zambrano Polo
+        <br/>
+        6277568
       </Paper>
     </Grid>
     // </DashboardComponent>
