@@ -7,7 +7,7 @@ import TextInput from "../Inputs/TextInput"
 import ROUTES from "../../constants/routes"
 import {fetcherGet, fetcherPost, fetcherPut} from "../../hooks/urls"
 import {CustomBackdrop} from "../CustomBackdrop"
-import {DialogActions} from "@mui/material"
+import {DialogActions, dialogActionsClasses} from "@mui/material"
 import SendIcon from "@mui/icons-material/Send"
 import LoadingButton from "@mui/lab/LoadingButton"
 import Grid from "@mui/material/Grid"
@@ -61,14 +61,15 @@ export const MapComponent: React.FC<LoadFormProps> = ({ locations, location, zoo
             center={location}
             defaultZoom={zoomLevel}
           >
-            {locations.map((loc, index) => (
+
+            {locations && locations.length > 0 && Array.isArray(locations) ? locations.map((loc, index) => (
               <LocationPin key={index} text={loc.address}
                 // @ts-ignore
                            lat={loc.lat}
                            lng={loc.long}
               />
 
-            ))}
+            )) : undefined}
 
             {/*<LocationPin text={location.address}*/}
             {/*  // @ts-ignore*/}

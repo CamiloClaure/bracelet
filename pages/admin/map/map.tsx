@@ -39,9 +39,8 @@ export default function AereonaveView() {
   }
   useEffect(() => {
     console.log('here')
-    fetcherGet(ROUTES.GET_ALL_REQUEST).then(data => {
-      setData(data)
-      console.log(data)
+    fetcherGet(ROUTES.GET_ALL_REQUEST).then(d => {
+      setData(d)
       // setData()
     })
   }, [])
